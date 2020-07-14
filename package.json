@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
   },
   "keywords": [],
   "engines": {
